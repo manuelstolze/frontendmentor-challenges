@@ -15,6 +15,12 @@ node_modules
 # Testing
 coverage
 
+# VSCode
+.vscode
+
+# IntelliJ
+.idea
+
 # Turbo
 .turbo
 
