@@ -1,0 +1,23 @@
+.card {
+    border-radius: 8px;
+    background-color: var(--white);
+}
+
+.card .content {
+    padding: 2rem;
+}
+
+.card .author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card .cover {
+    border-radius: 8px 8px 0 0;
+    max-width: 100%;
+}
+
+.actions {
+    margin-left: auto;
+}
