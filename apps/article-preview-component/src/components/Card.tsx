@@ -1,6 +1,8 @@
+"use client";
+
 import styles from "./card.module.css";
-import React from "react";
-import {CardAuthor} from "@/components/Card.Author";
+import React, {useState} from "react";
+import {CardFooter} from "@/components/Card.Footer";
 
 interface CardProps {
     image: {
@@ -10,7 +12,12 @@ interface CardProps {
 
 
 const Card: React.FC<CardProps> = (props)=> {
+    const [isShareOpen, setIsShareOpen] = useState(false);
     const {image} = props;
+
+    function handleShareClick() {
+        setIsShareOpen(!isShareOpen);
+    }
 
     return (
         <div className={styles.card}>
@@ -20,14 +27,18 @@ const Card: React.FC<CardProps> = (props)=> {
                     Shift the overall look and feel by adding these wonderful
                     touches to furniture in your home
                 </h1>
-                <p>
+                <p >
                     Ever been in a room and felt like something was missing? Perhaps
                     it felt slightly bare and uninviting. I’ve got some simple tips
                     to help you make any room feel complete.
                 </p>
-
-               <CardAuthor/>
             </div>
+            <div className={styles.footer}>
+                <div className={styles.footerContent}>
+                    <CardFooter/>
+                </div>
+            </div>
+
         </div>
     );
 }

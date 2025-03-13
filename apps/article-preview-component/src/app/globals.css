@@ -32,6 +32,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--dark-grey-blue);
+}
+
+h2 {
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 0.85rem;
+    color: var(--dark-blue);
+}
+
+
+
 * {
   box-sizing: border-box;
   padding: 0;

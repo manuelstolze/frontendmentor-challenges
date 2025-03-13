@@ -4,13 +4,32 @@
 }
 
 .card .content {
-    padding: 2rem;
+    padding: 2rem 2rem 1rem;
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.card .footer {
+    padding: 0 0;
+    display: grid;
+    grid-gap: 0;
+}
+
+
+.dark {
+    background-color: var(--dark-blue);
 }
 
 .card .author {
     display: flex;
     align-items: center;
+
     gap: 1rem;
+}
+
+.card .author img {
+    max-width: 40px;
+    border-radius: 50%;
 }
 
 .card .cover {
@@ -20,4 +39,33 @@
 
 .actions {
     margin-left: auto;
+}
+
+.share {
+    color: var(--light-grayish-blue);
+    line-height: 1.5;
+    font-size: 0.8rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--dark-grey-blue);
+}
+
+.actions img {
+    background-color: var(--light-grayish-blue);
+    width: 16px;
+    height: 16px;
+}
+
+.iconContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    background-color: var(--light-grayish-blue);
+    border-radius: 50%;
+    padding: 0.5rem;
 }
